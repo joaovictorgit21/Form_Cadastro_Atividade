@@ -1,21 +1,32 @@
-        var input     = document.getElementsByTagName('input');
-        var user      = document.getElementById('user');
-        var tel       = document.getElementById('tel');
-        var date      = document.getElementById('date');
-        var cpf       = document.getElementById('cpf');
-        var bairro    = document.getElementById('bairro');
-        var rua       = document.getElementById('rua');
-        var casa      = document.getElementById('casa');
-        var cep       = document.getElementById('cep');
-        var email     = document.getElementById('email');
-        var pswrd     = document.getElementById('pswrd');
-        var pswrd2    = document.getElementById('pswrd2');
-        var btn       = document.getElementById('btn');
-
-
-function Verificar()
+function validationForm()
 {
-        if (input == "") {
-                alert("Preencha")
+        let input     = document.getElementsByTagName('input');
+        let user      = document.getElementById('user');
+        let tel       = document.getElementById('tel');
+        let date      = document.getElementById('date');
+        let cpf       = document.getElementById('cpf');
+        let bairro    = document.getElementById('bairro');
+        let rua       = document.getElementById('rua');
+        let casa      = document.getElementById('casa');
+        let cep       = document.getElementById('cep');
+        let email     = document.getElementById('email');
+        let pswrd     = document.getElementById('pswrd');
+        let pswrd2    = document.getElementById('pswrd2');
+        let btn       = document.getElementById('btn');
+
+        if (pswrd != pswrd2) {
+                alert("As senhas tem que ser iguais!")
+        } else {
+                if (pswrd.lenght < 8) {
+                        alert("Necessário ter no minimo 8 digitos na senha!")
+                } else {
+                        if (cpf.lenght < 14) {
+                                alert("CPF inválido!")
+                        } else {
+                                if (input == "") {
+                                        alert("Preencha todos os campos!")
+                                }
+                        }
+                }
         }
 }
