@@ -1,0 +1,66 @@
+body
+{
+    margin: 0;
+}
+
+#screen-top
+{
+    width: 100%;
+    height: 10%;
+    background: rgb(18, 17, 17);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.crie
+{
+    position: relative;
+    left: 40%;
+}
+
+input
+{
+    width: 15rem;
+    height: 30px;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    font-size: large;
+    text-align: center;
+
+    position: relative;
+    left: 40%;
+}
+
+.title
+{
+    color: white;
+
+    position: relative;
+    right: 20rem;
+}
+
+h2
+{
+    position: relative;
+    left: 40%;
+}
+
+button
+{
+    width: 30rem;
+    height: 5rem;
+    background-color: rgb(196, 0, 49);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+
+    position: relative;
+    left: 30.5%;
+}
+
+button:hover
+{
+    cursor: pointer;
+    background-color: rgb(199, 7, 65);
+}
