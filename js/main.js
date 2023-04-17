@@ -1,4 +1,4 @@
-function validationForm()
+function Verificar()
 {
         let input     = document.getElementsByTagName('input');
         let user      = document.getElementById('user');
@@ -15,18 +15,8 @@ function validationForm()
         let btn       = document.getElementById('btn');
 
         if (pswrd != pswrd2) {
-                alert("As senhas tem que ser iguais!")
-        } else {
-                if (pswrd.lenght < 8) {
-                        alert("Necessário ter no minimo 8 digitos na senha!")
-                } else {
-                        if (cpf.lenght < 14) {
-                                alert("CPF inválido!")
-                        } else {
-                                if (input == "") {
-                                        alert("Preencha todos os campos!")
-                                }
-                        }
-                }
+                alert("As senhas devem ser iguais");
+                
+                return false
         }
 }
