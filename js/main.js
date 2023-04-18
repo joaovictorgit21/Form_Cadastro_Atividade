@@ -1,3 +1,4 @@
+//Colocando os pontos automaticamente no input 000.000.000-00 
 function mascara(i){
    
         var v = i.value;
@@ -12,6 +13,7 @@ function mascara(i){
         if (v.length == 11) i.value += "-";
      
 }
+
 
 function Verificar()
 {
