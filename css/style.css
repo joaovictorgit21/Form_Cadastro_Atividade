@@ -32,6 +32,11 @@ input
     left: 40%;
 }
 
+input:invalid
+{
+    border-color: red;
+}
+
 .title
 {
     color: white;
@@ -64,3 +69,4 @@ button:hover
     cursor: pointer;
     background-color: rgb(199, 7, 65);
 }
+

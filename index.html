@@ -11,9 +11,9 @@
 <body>
     <header id="screen-top">
 
-        <hr>
+        <hr class="top">
         <h1 class="title">Code_X</h1>
-        <hr>
+        <hr class="top">
 
     </header>
     <form id="screen-full">
@@ -28,7 +28,7 @@
             <br>
             <h2 id="Date">Data de Nascimento</h2><input id="date" type="date" placeholder="__/__/____">
             <br>
-            <h2 id="cpf">CPF</h2><input id="Cpf" type="number" placeholder="___.___.___-__">
+            <h2 id="cpf">CPF</h2><input oninput="mascara(this)" id="Cpf" type="text" placeholder="___.___.___-__">
             <br><hr><br>
             <h2 id="Bairro">Bairro</h2><input id="bairro" type="text">
             <br>
