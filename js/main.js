@@ -14,29 +14,27 @@ function mascara(i){
      
 }
 
-
 function Verificar()
 {
-        let user      = document.getElementById('user')
-        let tel       = document.getElementById('tel')
-        let date      = document.getElementById('date')
-        let cpf       = document.getElementById('cpf')
-        let bairro    = document.getElementById('bairro')
-        let rua       = document.getElementById('rua')
-        let casa      = document.getElementById('casa')
-        let cep       = document.getElementById('cep')
-        let email     = document.getElementById('email')
-        let pswrd     = document.getElementById('pswrd')
-        let pswrd2    = document.getElementById('pswrd2')
+        let user      = document.getElementById('user').value;
+        let tel       = document.getElementById('tel').value;
+        let date      = document.getElementById('date').value;
+        let cpf       = document.getElementById('cpf').value;
+        let bairro    = document.getElementById('bairro').value;
+        let rua       = document.getElementById('rua').value;
+        let casa      = document.getElementById('casa').value;
+        let cep       = document.getElementById('cep').value;
+        let email     = document.getElementById('email').value;
+        let pswrd     = document.getElementById('pswrd').value;
+        let pswrd2    = document.getElementById('pswrd2').value;
 
         if (!user || !tel || !date || !cpf || !bairro || !rua || !casa || !cep || !email || !pswrd || !pswrd2) {
-                alert("Preencha todos os campos");
+                alert("Por Favor preencha todos os campos");
         } 
-        else if (pswrd != pswrd2) {
+        if (pswrd != pswrd2) {
                 alert("As senhas devem ser iguais");
         }
-        else if (pswrd == "123456789") {
+        if (pswrd == "123456789" && pswrd2 == "123456789") {
                 alert("Senha muito óbvia")
         }
 }
-
