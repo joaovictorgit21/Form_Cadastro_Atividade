@@ -1,3 +1,6 @@
+/*URL da fonte que será apresentada*/
+@import url('https://fonts.googleapis.com/css2?family= Rubik +Dirt & display=swap');
+
 body
 {
     margin: 0;
@@ -13,12 +16,36 @@ body
     align-items: center;
 }
 
+.top
+{
+    width: 150px;
+}
+
+#top1
+{
+    position: relative;
+    top: 20px;
+    right: 21rem;
+}
+
+#top2
+{
+    position: relative;
+    top: -20px;
+    right: 21rem;
+}
+
 .crie
 {
     position: relative;
     left: 40%;
 }
 
+form
+{
+
+}
+/*System of inputs*/
 input
 {
     width: 15rem;
@@ -45,12 +72,14 @@ input:invalid
     right: 20rem;
 }
 
-h2
+label
 {
     position: relative;
     left: 40%;
+    font-size: larger;
 }
 
+/*System of button*/
 button
 {
     width: 30rem;
@@ -69,4 +98,3 @@ button:hover
     cursor: pointer;
     background-color: rgb(199, 7, 65);
 }
-

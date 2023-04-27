@@ -30,11 +30,15 @@ function Verificar()
 
         if (!user || !tel || !date || !cpf || !bairro || !rua || !casa || !cep || !email || !pswrd || !pswrd2) {
                 alert("Por Favor preencha todos os campos");
-        } 
-        if (pswrd != pswrd2) {
-                alert("As senhas devem ser iguais");
+        } else {
+                alert("Cadastro");
         }
-        if (pswrd == "123456789" && pswrd2 == "123456789") {
-                alert("Senha muito óbvia")
+        if (pswrd === pswrd2) {
+                alert("Senhas iguais, continuando cadastro!");
+        } else {
+                alert("As senhas devem ser iguais!");
+        }
+        if (cpf) {
+                alert("Senha muito óbvia");
         }
 }
