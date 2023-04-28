@@ -1,4 +1,28 @@
-//Colocando os pontos automaticamente no input 000.000.000-00 
+function Verificar()
+{
+        let user                = document.getElementById('user').value;
+        let tel                 = document.getElementById('tel').value;
+        let date                = document.getElementById('date').value;
+        let cpf                 = document.getElementById('cpf').value;
+        let bairro              = document.getElementById('bairro').value;
+        let rua                 = document.getElementById('rua').value;
+        let casa                = document.getElementById('casa').value;
+        let cep                 = document.getElementById('cep').value;
+        let city                = document.getElementById('city').value;
+        let state               = document.getElementById('state').value;
+        let email               = document.getElementById('email').value;
+        let pswrd               = document.getElementById('pswrd').value;
+        let psword_repeat        = document.getElementById('psword_repeat').value;
+
+        if (!user || !tel || !date || !cpf || !bairro || !rua || !casa || !cep || !city|| !state || !add || !email || !pswrd || !psword_repeat) {
+                alert("PorFavor preencher todos os campos!");
+        } else if (pswrd !== pswrd_repeat){
+                alert("Confirmação de senha incorreta");
+        }else{
+                alert("Cadastro concluído com sucesso");
+        }
+}
+
 function mascara(i){
    
         var v = i.value;
@@ -12,33 +36,4 @@ function mascara(i){
         if (v.length == 3 || v.length == 7) i.value += ".";
         if (v.length == 11) i.value += "-";
      
-}
-
-function Verificar()
-{
-        let user      = document.getElementById('user').value;
-        let tel       = document.getElementById('tel').value;
-        let date      = document.getElementById('date').value;
-        let cpf       = document.getElementById('cpf').value;
-        let bairro    = document.getElementById('bairro').value;
-        let rua       = document.getElementById('rua').value;
-        let casa      = document.getElementById('casa').value;
-        let cep       = document.getElementById('cep').value;
-        let email     = document.getElementById('email').value;
-        let pswrd     = document.getElementById('pswrd').value;
-        let pswrd2    = document.getElementById('pswrd2').value;
-
-        if (!user || !tel || !date || !cpf || !bairro || !rua || !casa || !cep || !email || !pswrd || !pswrd2) {
-                alert("Por Favor preencha todos os campos");
-        } else {
-                alert("Cadastro");
-        }
-        if (pswrd === pswrd2) {
-                alert("Senhas iguais, continuando cadastro!");
-        } else {
-                alert("As senhas devem ser iguais!");
-        }
-        if (cpf) {
-                alert("Senha muito óbvia");
-        }
 }

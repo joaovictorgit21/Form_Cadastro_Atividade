@@ -41,10 +41,6 @@ body
     left: 40%;
 }
 
-form
-{
-
-}
 /*System of inputs*/
 input
 {
@@ -54,7 +50,6 @@ input
     background-color: rgb(255, 255, 255);
     font-size: large;
     text-align: center;
-
     position: relative;
     left: 40%;
 }
@@ -67,7 +62,6 @@ input:invalid
 .title
 {
     color: white;
-
     position: relative;
     right: 20rem;
 }

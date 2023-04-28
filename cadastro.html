@@ -6,7 +6,7 @@
     <title>Cadastre-se</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
-    <script src='/js/main.js'></script>
+    <script src='./js/main.js'></script>
 </head>
 <body>
     <header id="screen-top">
@@ -38,21 +38,21 @@
             <br>
             <label id="Cep">CEP</label><input id="cep" type="number" placeholder="Ex: 80010-010">
             <br><br>
-            <label>Cidade</label><input type="text">
+            <label id="Cidade">Cidade</label><input id="city" type="text">
             <br><br>
-            <label>Estado</label><input type="text">
+            <label id="Estado">Estado</label><input id="state" type="text">
             <br><br>
-            <label>Complemento</label><input type="text">
+            <label id="Complemento">Complemento</label><input id="complement" type="text">
             <br><br>
-            <label>Adicionais</label><input type="text">
+            <label id="Add">Adicionais</label><input id="add" type="text">
             <br><hr><br>
             <label id="Email">Email</label><input id="email" type="email" placeholder="Ex: construcoes@gmail.com">
             <br>
             <label id="Pass">Senha</label><input id="pswrd" minlength="8" type="password" placeholder="Ex: 12345678">
             <br>
-            <label id="RepetPass">Repetir Senha</label><input id="psword2" minlength="8" type="password">
+            <label id="RepetPass">Repetir Senha</label><input id="psword_repeat" minlength="8" type="password">
             <br><br>
-            <button type="button" id="btn" onclick="Verificar()">Cadastrar</button>
+            <a id="link_Loja" href=""><button type="button" id="btn" onclick="Verificar()">Cadastrar</button></a>
         </div>
         <br><br><br>
     </form>
