@@ -3,7 +3,7 @@ function Verificar()
         let user                = document.getElementById('user').value;
         let tel                 = document.getElementById('tel').value;
         let date                = document.getElementById('date').value;
-        let cpf                 = document.getElementById('cpf').value;
+        let cpf                 = document.getElementById('Cpf').value;
         let bairro              = document.getElementById('bairro').value;
         let rua                 = document.getElementById('rua').value;
         let casa                = document.getElementById('casa').value;
@@ -12,14 +12,12 @@ function Verificar()
         let state               = document.getElementById('state').value;
         let email               = document.getElementById('email').value;
         let pswrd               = document.getElementById('pswrd').value;
-        let psword_repeat        = document.getElementById('psword_repeat').value;
+        let psword_repeat       = document.getElementById('psword_repeat').value;
 
         if (!user || !tel || !date || !cpf || !bairro || !rua || !casa || !cep || !city|| !state || !add || !email || !pswrd || !psword_repeat) {
                 alert("PorFavor preencher todos os campos!");
-        } else if (pswrd !== pswrd_repeat){
-                alert("Confirmação de senha incorreta");
-        }else{
-                alert("Cadastro concluído com sucesso");
+        } else {
+                alert("Cadastro concluido!");
         }
 }
 
