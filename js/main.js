@@ -16,8 +16,10 @@ function Verificar()
 
         if (!user || !tel || !date || !cpf || !bairro || !rua || !casa || !cep || !city|| !state || !add || !email || !pswrd || !psword_repeat) {
                 alert("PorFavor preencher todos os campos!");
-        } else {
+        } else  if (pswrd === psword_repeat) {
                 alert("Cadastro concluido!");
+        } else {
+                alert("Senhas devem ser iguais!");
         }
 }
 
